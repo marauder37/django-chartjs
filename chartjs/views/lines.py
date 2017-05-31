@@ -25,7 +25,7 @@ class BaseLineChartView(JSONView):
         num = len(providers)
         for i, entry in enumerate(data):
             color = tuple(next(color_generator))
-            dataset = {'backgroundColor': "rgba(%d, %d, %d, 0.5)" % color,
+            dataset = {'backgroundColor': "rgba(%d, %d, %d, 0.2)" % color,
                        'borderColor': "rgba(%d, %d, %d, 1)" % color,
                        'pointBackgroundColor': "rgba(%d, %d, %d, 1)" % color,
                        'pointBorderColor': "#fff",
